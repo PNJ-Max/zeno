@@ -112,13 +112,19 @@
         </div>
     </section>
 
-    <section>
-        <div>
-            <!-- Vidéo -->
-        </div>
-        <div>
+    <section id="meditation">
+        <div class="video-container">
             <h2>Les bienfaits de la méditation</h2>
-            <p></p>
+            <p>Découvrez notre univers à travers cette vidéo apaisante.</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/elWR2gF4I-0?si=fE0o2akQSmemXSmQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>    
             
     </section>
@@ -140,11 +146,36 @@
                 <div class="galerie-item4"><img src="images/encens-4.webp" alt="Encens"></div>
             </div>
         </div>
-
-
-
-
     </section>
+
+    <section id="contact">
+        <div class="form-container">
+            <h2>Une question ? Contactez-nous</h2>
+            <form action="" id="contactForm" method="post">
+                <label for="lastName">Nom :</label>
+                <input type="text" id="lastName" name="lastName" required>
     
+                <label for="firstname">Prénom :</label>
+                <input type="text" id="firstname" name="firstName" required>
+    
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Envoyer</button>
+                <p id="error-message"></p>
+    
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Zeno. Tous droits réservés.</p>
+            <p>Mentions légales | CGV | Politique de confidentialité</p>
+        </div>
+    </footer>
 </body>
 </html>
