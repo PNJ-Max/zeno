@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Baskervville+SC&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a5db53b08a.js" crossorigin="anonymous"></script>
     <title>Zeno</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
         </nav>
 
         <div class="ecommerce-icons">
-            <!-- Section icones e-commerce future-->
+            <i class="fa-solid fa-cart-shopping"></i>
         </div>  
     </header>
 
@@ -65,47 +66,47 @@
                 <div class="product-meta">
                     <span class="price">19,90€</span>
                     <div class="icons">
-                        <span class="icon-heart">♥</span>
-                        <span class="icon-cart">🛒</span>
+                        <span class="icon-heart"><i class="fa-regular fa-heart"></i></span>
+                        <span class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
             </div>
 
             <div class=" product-item">
-                <img src="images/bougies-3.webp" alt="Bougies Zeno">
+                <img src="images/bougies-2.webp" alt="Bougies Zeno">
                 <h3>Bougies parfumées</h3>
                 <p>Encalyptus</p>
                 <div class="product-meta">
                     <span class="price">19,90€</span>
                     <div class="icons">
-                        <span class="icon-heart">♥</span>
-                        <span class="icon-cart">🛒</span>
+                        <span class="icon-heart"><i class="fa-regular fa-heart"></i></span>
+                        <span class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
             </div>
 
             <div class=" product-item">
-                <img src="images/bougies-4.webp" alt="Bougies Zeno">
+                <img src="images/bougies-2.webp" alt="Bougies Zeno">
                 <h3>Bougies parfumées</h3>
                 <p>Encalyptus</p>
                 <div class="product-meta">
                     <span class="price">19,90€</span>
                     <div class="icons">
-                        <span class="icon-heart">♥</span>
-                        <span class="icon-cart">🛒</span>
+                        <span class="icon-heart"><i class="fa-regular fa-heart"></i></span>
+                        <span class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
             </div>
 
             <div class=" product-item">
-                <img src="images/bougies-1.webp" alt="Bougies Zeno">
+                <img src="images/bougies-2.webp" alt="Bougies Zeno">
                 <h3>Bougies parfumées</h3>
                 <p>Encalyptus</p>
                 <div class="product-meta">
                     <span class="price">19,90€</span>
                     <div class="icons">
-                        <span class="icon-heart">♥</span>
-                        <span class="icon-cart">🛒</span>
+                        <span class="icon-heart"><i class="fa-regular fa-heart"></i></span>
+                        <span class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
             </div>
@@ -177,5 +178,17 @@
             <p>Mentions légales | CGV | Politique de confidentialité</p>
         </div>
     </footer>
+
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-header">
+            <h3>Votre panier</h3>
+            <button id="close-cart" aria-label="Fermer le panier"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul id="cart-items">
+            <!-- Les produits ajoutés seront insérés ici -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
