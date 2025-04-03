@@ -1,0 +1,40 @@
+/* Responsive description */
+@media screen and (max-width: 768px) {
+  
+    .container-description {
+      flex-direction: column;           
+      padding: 0 20px;                  
+    }
+  
+    .text-description, .photo-description {
+      flex: unset;         /* Retire la contrainte de largeur 50% */
+      width: 100%;                      
+      text-align: center;               
+    }
+  
+    .photo-description {
+      padding: 20px 0;   
+    }
+  
+    .text-description {
+      text-align: justify;              
+    }
+  
+    #description img {
+      max-width: 100%;                  
+    }
+  }
+
+/* Produits accueil*/
+
+@media screen and (max-width: 1024px) {
+    .product-item {
+      width: calc(50% - 20px); 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-item {
+      width: 100%; 
+    }
+  }

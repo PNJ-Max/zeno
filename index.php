@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Baskervville+SC&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a5db53b08a.js" crossorigin="anonymous"></script>
-    <title>Zeno</title>
-</head>
-<body>
-        <!-- Header -->
-    <header class="container-nav">
-        <a href="index.html" class ="logo">
-            <img src="logo/logo-zeno-horizontal-blanc.png" alt="Logo de Zeno">
-        </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="#hero">Accueil</a></li>
-                <li><a href="#products">Nos produits</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="ecommerce-icons">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>  
-    </header>
-
+<?php
+$pageTitle = "Zeno - Accueil";
+require_once 'includes/header.php';
+?>
+<main> 
         <!-- Section Hero -->
     <section id="hero">
         <div class="hero-content">
@@ -171,24 +143,8 @@
             </form>
         </div>
     </section>
+</main>    
 
-    <footer id="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Zeno. Tous droits réservés.</p>
-            <p>Mentions légales | CGV | Politique de confidentialité</p>
-        </div>
-    </footer>
+    
 
-    <div id="cart-panel" class="cart-panel">
-        <div class="cart-header">
-            <h3>Votre panier</h3>
-            <button id="close-cart" aria-label="Fermer le panier"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <ul id="cart-items">
-            <!-- Les produits ajoutés seront insérés ici -->
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+<?php include_once 'includes/footer.php'; ?>

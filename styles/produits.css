@@ -1,0 +1,75 @@
+/* Section Produits - à adapter avec php dans le futur */
+
+#products {
+    background-color: var(--zeno-beige);
+    padding: 40px;
+}
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 1200px;
+    
+    
+}
+
+.product-item {
+    width: calc(25% - 15px); /* laisse de l’espace pour les gaps */ 
+    background-color: var(--zeno-beige-clair);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    gap: 10px;
+    height: 100%;
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 10px;
+    
+}
+
+.product-meta .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
+.product-meta .icon-cart i,
+.product-meta .icon-heart i {
+    font-size: 20px;
+    color: var(--zeno-noir);
+    transition: transform 0.2s ease;
+}
+
+.product-meta .icon-cart:hover i,
+.product-meta .icon-heart:hover i {
+    transform: scale(1.2);
+    color: var(--zeno-beige-foncé);
+}
